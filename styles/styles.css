@@ -1,0 +1,127 @@
+body,
+a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #373a40;
+    text-decoration: none;
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+#top {
+    height: 100vh;
+}
+
+.logo {
+    background: url("../assets/hms-logo.svg");
+    height: 57.5px;
+    width: 150px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #373a40;
+    font-weight: bolder;
+}
+
+.nav-link::before {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav-link::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-color: #a8dda8;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s, height 0.3s linear;
+    width: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    height: 3px;
+}
+
+.signin-btn {
+    padding: 5px 20px;
+    background-color: #a8dda8;
+    border: 0;
+}
+
+.signin-btn:hover {
+    background-color: #2d6187;
+    border: 0;
+}
+
+.login-btn {
+    padding: 5px 20px;
+    background-color: #ffffff;
+    border: 1px solid #373a40;
+}
+
+.login-btn:hover {
+    background-color: #2d6187;
+    border: 1px solid #ffffff;
+}
+
+.top-content {
+    margin: 5vh 50px;
+    height: 80%;
+    text-align: center;
+    padding: 0;
+    position: relative;
+}
+
+.heading {
+    margin: 10px auto;
+    word-spacing: 1rem
+}
+
+.special-letter {
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    margin-top: 5%;
+}
+
+.taglines {
+    margin: auto 0 auto auto;
+    text-align: center;
+}
+
+.taglines h3 {
+    width: 60%;
+    display: inline-block;
+}
+
+.top-img {
+    margin: auto;
+    height: 100%;
+    display: block;
+}
