@@ -10,10 +10,6 @@ a {
     padding: 0;
 }
 
-#top {
-    height: 100vh;
-}
-
 .logo {
     background: url("../assets/hms-logo.svg");
     height: 57.5px;
@@ -70,6 +66,7 @@ a {
     padding: 5px 20px;
     background-color: #a8dda8;
     border: 0;
+    font-weight: bold;
 }
 
 .signin-btn:hover {
@@ -81,19 +78,21 @@ a {
     padding: 5px 20px;
     background-color: #ffffff;
     border: 1px solid #373a40;
+    font-weight: bold;
 }
 
 .login-btn:hover {
     background-color: #2d6187;
     border: 1px solid #ffffff;
+    color: #ffffff;
 }
 
-.top-content {
-    margin: 5vh 50px;
-    height: 80%;
+.content {
+    margin: 15vh 5vw;
     text-align: center;
-    padding: 0;
+    padding: 0 2%;
     position: relative;
+    height: auto;
 }
 
 .heading {
@@ -102,26 +101,36 @@ a {
 }
 
 .special-letter {
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 0.1em;
 }
 
-.content {
-    margin-top: 5%;
-}
-
 .taglines {
-    margin: auto 0 auto auto;
+    margin: 10% auto;
+    padding: 0 10%;
     text-align: center;
+    height: 100px;
 }
 
-.taglines h3 {
-    width: 60%;
-    display: inline-block;
+.cursor {
+    border-right: 0.1em solid #ec735c;
+    animation: blink-cursor 0.75s linear infinite;
 }
 
 .top-img {
+    max-width: 100vw;
     margin: auto;
     height: 100%;
     display: block;
+}
+
+
+@keyframes blink-cursor {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #ec735c
+    }
 }
